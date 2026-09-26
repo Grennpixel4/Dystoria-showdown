@@ -1,5 +1,7 @@
 /config/*
 !/config/formats.ts
+!/config/config.js
+!/config/config-example.js
 /logs/**/*
 /test/modlogs
 /test/replays/*.html
@@ -28,6 +30,7 @@ tools/set-import/*.js
 
 # visual studio live share
 .vs
+
 
 # boilerplate #
 ###############
