@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../data/mods/gen9deltamon/conditions.ts"],
+  "sourcesContent": ["export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDataTable = {\r\n\tfuturemove: {\r\n\t\tinherit: true,\r\n\t\tonStart(target, source) {\r\n\t\t\tthis.effectState.targetSlot = target.getSlot();\r\n\t\t\tthis.effectState.endingTurn = (this.turn - 1) + (source.baseSpecies.id === 'aqua' ? 5 : 2);\r\n\t\t\tif (this.effectState.endingTurn >= 254) {\r\n\t\t\t\tthis.hint(`In Gen 8+, Future attacks will never resolve when used on the 255th turn or later.`);\r\n\t\t\t}\r\n\t\t},\r\n\t},\r\n};\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAO,MAAM,aAA6E;AAAA,EACzF,YAAY;AAAA,IACX,SAAS;AAAA,IACT,QAAQ,QAAQ,QAAQ;AACvB,WAAK,YAAY,aAAa,OAAO,QAAQ;AAC7C,WAAK,YAAY,aAAc,KAAK,OAAO,KAAM,OAAO,YAAY,OAAO,SAAS,IAAI;AACxF,UAAI,KAAK,YAAY,cAAc,KAAK;AACvC,aAAK,KAAK,oFAAoF;AAAA,MAC/F;AAAA,IACD;AAAA,EACD;AACD;",
+  "names": []
+}

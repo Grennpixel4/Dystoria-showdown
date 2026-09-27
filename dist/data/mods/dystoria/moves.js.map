@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../data/mods/dystoria/moves.ts"],
+  "sourcesContent": ["export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {\r\n\tvenostrike: {\r\n\t\tnum: 20012,\r\n\t\taccuracy: 100,\r\n\t\tbasePower: 65,\r\n\t\tcategory: \"Physical\",\r\n\t\tname: \"Venostrike\",\r\n\t\tshortDesc: \"Power doubles if the target is poisoned.\",\r\n\t\tdesc: \"This move's power is doubled against a poisoned target.\",\r\n\t\tpp: 10,\r\n\t\tpriority: 0,\r\n\t\tflags: { protect: 1, contact: 1, mirror: 1, metronome: 1 },\r\n\t\tonBasePower(basePower, pokemon, target) {\r\n\t\t\tif (target.status === \"psn\" || target.status === \"tox\") {\r\n\t\t\t\treturn this.chainModify(2);\r\n\t\t\t}\r\n\t\t},\r\n\t\ttarget: \"normal\",\r\n\t\ttype: \"Poison\",\r\n\t\tcontestType: \"Tough\",\r\n\t},\r\n};"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAO,MAAM,QAA8D;AAAA,EAC1E,YAAY;AAAA,IACX,KAAK;AAAA,IACL,UAAU;AAAA,IACV,WAAW;AAAA,IACX,UAAU;AAAA,IACV,MAAM;AAAA,IACN,WAAW;AAAA,IACX,MAAM;AAAA,IACN,IAAI;AAAA,IACJ,UAAU;AAAA,IACV,OAAO,EAAE,SAAS,GAAG,SAAS,GAAG,QAAQ,GAAG,WAAW,EAAE;AAAA,IACzD,YAAY,WAAW,SAAS,QAAQ;AACvC,UAAI,OAAO,WAAW,SAAS,OAAO,WAAW,OAAO;AACvD,eAAO,KAAK,YAAY,CAAC;AAAA,MAC1B;AAAA,IACD;AAAA,IACA,QAAQ;AAAA,IACR,MAAM;AAAA,IACN,aAAa;AAAA,EACd;AACD;",
+  "names": []
+}
